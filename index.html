@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description">
+    <title>Optimized Website</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/app.js" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="/" class="nav__logo">
+                <img src="images/logo.svg" alt="Company Logo" width="150" height="40">
+            </a>
+            
+            <button class="nav__toggle" aria-expanded="false" aria-label="Menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            
+            <ul class="nav__menu">
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Welcome to Our Modern Website</h1>
+                <p class="hero__text">Experience next-level web solutions</p>
+                <a href="#contact" class="hero__cta">Get Started</a>
+            </div>
+            <picture class="hero__image">
+                <source srcset="images/hero.webp" type="image/webp">
+                <img src="https://cms.transcombd.com/media/images/Pepsi_Mobile.width-576.format-webp.webp" alt="Hero image" loading="lazy">
+            </picture>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <article class="feature-card">
+                <h2 class="feature-card__title">Responsive Design</h2>
+                <p class="feature-card__text">Mobile-first approach for all devices</p>
+            </article>
+            <!-- Add more feature cards -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <p class="footer__copyright">&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/app.js" defer></script>
+</body>
+</html>
